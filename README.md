@@ -44,3 +44,41 @@ lego-mindstorms-motion-planning/
 │   ├── simulator_demo.gif            # Demo del simulador en acción
 │   └── video_demo.mp4                # Video del robot físico ejecutando trayectorias
 └── README.md
+
+```
+
+## 💻 Guía de Configuración y Ejecución
+
+Sigue estos pasos para levantar el proyecto en tu máquina local:
+
+### 1. Crear el Entorno Virtual
+Para mantener las dependencias aisladas, crea un entorno de Python:
+```bash
+python -m venv venv
+```
+### 2. Activar el Entorno
+En Windows (PowerShell):
+Si recibes un error de permisos, ejecuta primero el comando para habilitar scripts:
+
+```bash
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+```
+Luego activa el entorno:
+
+```bash
+.\venv\Scripts\activate
+```
+
+### 3. Instalar Requerimientos
+Con el entorno activado, instala las librerías necesarias (Numpy, Matplotlib, Pillow):
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Correr la Simulación
+Para ejecutar el planificador, ver los movimientos básicos y elegir una ruta para el LEGO, corre:
+
+```bash
+python simulator/trajectory_planner.py
+```
