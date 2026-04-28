@@ -6,7 +6,7 @@
 **Periodo:** Enero-Junio 2026  
 **Materia:** Planificación de Movimientos  
 **Profesor:** Dr. Francisco Javier Montecillo Puente  
-**Alumno:** Isaac Ortiz Arias
+**Alumnos:** Isaac Ortiz Arias | Julian Raya Arroyo
 
 ---
 
