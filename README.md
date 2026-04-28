@@ -4,10 +4,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![LEGO](https://img.shields.io/badge/LEGO-Mindstorms-E3000B.svg)]()
 
-> [cite_start]**Instituto Tecnológico Superior de Salvatierra** [cite: 1]  
-> [cite_start]Ing. en Tecnologías de la Información y Comunicaciones [cite: 2]  
-> Materia: Planificación de Movimientos | [cite_start]Dr. Francisco Javier Montecillo Puente [cite: 4]  
-> [cite_start]**Unidad I: Modelado Geométrico** [cite: 4]
+>**Instituto Tecnológico Superior de Salvatierra**
+>
+>**Ing. en Tecnologías de la Información y Comunicaciones**
+>
+>**Materia: Planificación de Movimientos | Dr. Francisco Javier Montecillo Puente**
 
 ---
 
@@ -17,12 +18,12 @@
 ---
 
 ## Fases del Proyecto (Roadmap)
-- [ ] **1. [cite_start]Construcción y Modelo:** Armado del LEGO [cite: 26] [cite_start]y definición del modelo cinemático 2D[cite: 27].
-- [ ] **2. [cite_start]Simulador Cinemático:** Desarrollo en Python para simular movimientos en línea recta, giros (izquierda/derecha) y combinados[cite: 28].
-- [ ] **3. [cite_start]Mapeo y Colisiones:** Representación de un mapa de 2x2 metros con obstáculos [cite: 19] [cite_start]y cálculo del espacio de configuración (C-space) libre de colisiones[cite: 21].
-- [ ] **4. [cite_start]Planificación (Grafo):** Generación de un grafo partiendo de la coordenada 0.0, expandiendo nodos con combinaciones de configuración hasta alcanzar aproximadamente 1000 nodos válidos[cite: 22].
-- [ ] **5. [cite_start]Ejecución Física:** Planteamiento de 3 trayectorias [cite: 30][cite_start], comprobadas en el simulador y ejecutadas en el carrito LEGO[cite: 29, 30].
-- [ ] **6. [cite_start]Documentación:** Reporte de 30 hojas (metodología, ecuaciones, diagramas) [cite: 17] [cite_start]y video de evidencia[cite: 31, 32].
+- [ ] **1. Construcción y Modelo:** Armado del LEGO [cite: 26] [cite_start]y definición del modelo cinemático 2D[cite: 27].
+- [ ] **2. Simulador Cinemático:** Desarrollo en Python para simular movimientos en línea recta, giros (izquierda/derecha) y combinados[cite: 28].
+- [ ] **3. Mapeo y Colisiones:** Representación de un mapa de 2x2 metros con obstáculos [cite: 19] [cite_start]y cálculo del espacio de configuración (C-space) libre de colisiones[cite: 21].
+- [ ] **4. Planificación (Grafo):** Generación de un grafo partiendo de la coordenada 0.0, expandiendo nodos con combinaciones de configuración hasta alcanzar aproximadamente 1000 nodos válidos[cite: 22].
+- [ ] **5. Ejecución Física:** Planteamiento de 3 trayectorias [cite: 30][cite_start], comprobadas en el simulador y ejecutadas en el carrito LEGO[cite: 29, 30].
+- [ ] **6. Documentación:** Reporte de 30 hojas (metodología, ecuaciones, diagramas) [cite: 17] [cite_start]y video de evidencia[cite: 31, 32].
 
 ---
 
