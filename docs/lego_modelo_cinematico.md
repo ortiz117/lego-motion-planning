@@ -61,10 +61,59 @@ Se implementa un generador de nodos partiendo del origen $(0.0, 0.0, 0.0)$.
 - Se verifica la colisión en cada paso.
 - Solo los nodos libres se agregan al grafo hasta alcanzar **1000 nodos válidos**.
 
+### Flujo de generación del C‑Space
+
+```mermaid
+graph TD
+    A[Inicio: Nodo 0,0] --> B[Generar punto aleatorio en mapa 2x2]
+    B --> C[Buscar nodo más cercano en el árbol]
+    C --> D[Probar 10 combinaciones de motor wl, wr, t]
+    D --> E{¿Hay colisión?}
+    E -- Sí --> F[Descartar rama]
+    F --> B
+    E -- No --> G[Agregar nodo al árbol]
+    G --> H{¿Llegamos a 1000 nodos?}
+    H -- No --> B
+    H -- Sí --> I[Extraer ruta óptima]
+    I --> J[Generar instrucciones para LEGO]
+```
+
 ---
 
 ## 5. Desarrollo de la Simulación (Python)
-[Aquí se incluirán los fragmentos de código del simulador y las gráficas de los nodos generados]
+### Arquitectura del Simulador
+
+```mermaid
+classDiagram
+    class TrajectoryPlanner {
+        +main()
+        +probar_movimientos_basicos()
+    }
+    class CSpaceBuilder {
+        +generar_grafo_rrt(raiz, objetivo)
+        +ruta_libre(nodo)
+    }
+    class RobotKinematics {
+        +Nodo
+        +mover_robot(nodo, wl, wr, t)
+        +obtener_esquinas_robot(x, y, theta)
+    }
+    class CollisionChecker {
+        +OBSTACULOS
+        +hay_colision(esquinas)
+        +punto_en_obstaculo(x, y)
+    }
+    class Visualizer {
+        +visualizar_simulacion(arbol)
+        +extraer_ruta_para_lego(nodo)
+    }
+
+    TrajectoryPlanner --> CSpaceBuilder : "Inicia proceso"
+    CSpaceBuilder --> RobotKinematics : "Calcula posiciones"
+    CSpaceBuilder --> CollisionChecker : "Valida colisiones"
+    TrajectoryPlanner --> Visualizer : "Muestra resultados"
+    Visualizer --> RobotKinematics : "Dibuja el rectángulo"
+```
 
 ---
 
