@@ -7,11 +7,11 @@ import matplotlib.patches as patches
 # ==========================================
 # 1. PARÁMETROS DEL ROBOT Y MAPA
 # ==========================================
-# Medidas físicas del LEGO (ajusta a tu prototipo en metros)
-R_LLANTA = 0.027  
-L = 0.15          # Distancia entre llantas (eje)
-ROBOT_LARGO = 0.20 # Largo total del rectángulo del carrito
-ROBOT_ANCHO = 0.15 # Ancho total del rectángulo del carrito
+# Medidas físicas del LEGO 
+R_LLANTA = 0.0275  
+L = 0.115          # Distancia entre llantas (eje)
+ROBOT_LARGO = 0.135 # Largo total del rectángulo del carrito
+ROBOT_ANCHO = 0.18 # Ancho total del rectángulo del carrito
 
 # Mapa 2x2: Obstáculos (xmin, xmax, ymin, ymax)
 OBSTACULOS = [
@@ -120,7 +120,7 @@ def generar_grafo_rrt(nodos_objetivo=1000):
     while nodos_validos < nodos_objetivo:
         nodo_base = random.choice(arbol)
         
-        # 10 combinaciones aleatorias desde el nodo base (como pidió el profe)
+        # 10 combinaciones aleatorias desde el nodo base
         for _ in range(10):
             if nodos_validos >= nodos_objetivo:
                 break

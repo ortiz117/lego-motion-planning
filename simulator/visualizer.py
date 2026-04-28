@@ -30,16 +30,16 @@ def visualizar_simulacion(arbol):
     opciones = [meta_1, meta_2, meta_3]
 
     print("\n" + "="*45)
-    print("🚗 MENÚ DE PLANIFICACIÓN DE TRAYECTORIAS 🚗")
+    print("PLANIFICACIÓN DE TRAYECTORIAS")
     print("="*45)
-    print("1. Ruta Óptima Principal (La más directa a la meta)")
+    print("1. Ruta Optima Principal (La más directa a la meta)")
     print("2. Ruta Alternativa A (Variación media)")
     print("3. Ruta Alternativa B (Variación corta)")
     print("="*45)
     
     seleccion = ""
     while seleccion not in ['1', '2', '3']:
-        seleccion = input("Elige el número de la ruta que deseas simular (1, 2 o 3): ")
+        seleccion = input("Elige el número de la ruta que deseas simular: ")
         
     mejor_meta = opciones[int(seleccion) - 1]
     print(f"\n=> Preparando animación para la Ruta {seleccion}...")
@@ -82,10 +82,9 @@ def visualizar_simulacion(arbol):
     plt.grid(True)
 
     # ==========================================
-    # LÓGICA DE ANIMACIÓN DETALLADA (LENTA)
+    # LÓGICA DE ANIMACIÓN DETALLADA 
     # ==========================================
     def update(frame):
-        # Ahora procesa cada frame uno por uno (sin saltarse pasos)
         x = ruta_x[frame]
         y = ruta_y[frame]
         theta = ruta_theta[frame]
