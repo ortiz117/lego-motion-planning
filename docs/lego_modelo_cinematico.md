@@ -128,5 +128,4 @@ classDiagram
 ---
 
 ## 8. Referencias
-1. LaValle, S. M. (2006). *Planning Algorithms*. Cambridge University Press.
-2. Material de clase, Dr. Francisco Javier Montecillo Puente.
+Material de clase, Dr. Francisco Javier Montecillo Puente.
