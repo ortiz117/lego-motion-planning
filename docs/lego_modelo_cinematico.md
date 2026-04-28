@@ -118,12 +118,13 @@ classDiagram
 ---
 
 ## 6. Resultados y Ejecución en LEGO
-[Documentación de las 3 trayectorias seleccionadas y fotos/links del video de ejecución]
+![Ruta 1](/media/simulator_demo_ruta1.gif)
+![Ruta 2](/media/simulator_demo_ruta2.gif)
+![Ruta 3](/media/simulator_demo_ruta3.gif)
 
 ---
 
 ## 7. Conclusiones
-[Análisis final sobre la precisión del modelo cinemático y la fiabilidad de la detección de colisiones]
 
 ---
 
